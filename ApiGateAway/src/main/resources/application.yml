@@ -1,0 +1,10 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: api_gateAway
+routes:
+  - id: Microservice1
+    uri: http://localhost:8080/
+    predicates:
+      - Path=/task/**
